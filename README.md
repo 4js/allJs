@@ -1,6 +1,12 @@
 # allJs
 前端知识总结
 
+### 盒模型
+
++ w3c标准盒模型： width=content
++ iE盒模型： width=content+padding+border
+
+可以通过box-sizing改变，默认值content-box,可选border-box,inherit
 
 ### node
 
