@@ -2,6 +2,8 @@
 
 ![面试题2](https://juejin.im/post/5d59f2a451882549be53b170 "面试题2")
 
+[最新面试题](https://juejin.im/post/6844904084374290446 "最新面试题")
+
 ### MVVM 模式，顾名思义即 Model-View-ViewModel 模式
 
 + Model 层: 对应数据层的域模型，它主要做域模型的同步。通过 Ajax/fetch 等 API 完成客户端和服务端业务 Model 的同步。在层间关系里，它主要用于抽象出 ViewModel 中视图的 Model。
