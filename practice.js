@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-25 19:49:17
- * @LastEditTime: 2020-08-25 20:24:30
+ * @LastEditTime: 2020-08-26 16:22:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \allJs\practice.js
@@ -71,3 +71,57 @@ function shallowClone(source){
  *  */
 
 const flatten = (arr) => arr.toString().split(',').map((item) => +item)
+
+
+/**
+ * 批量请求 最大并发 回调函数
+ */
+
+// function multiRequest(urls, maxNum, callback){
+//   let len = urls.length
+//   let i = 0 // 请求第几次
+//   let requestQueue = [] // 请求队列
+//   let results = [] // 结果队列
+//   const handleRequest = url = {
+//     const req = reqFunc(url)
+//       .then((res) => {
+//         results.push(res)
+//       })
+//       .catch(e => {
+//         results.push(e)
+//       })
+//       .finally(() => {
+//         const resLen = results.length
+//         if(resLen<len){
+//           requestQueue.unshift()
+//           handleRequest(urls[++i])
+//         } else {
+//           'function' === typeof callback && callback(results)
+//         }
+//       })
+//     requestQueue.push(req)
+    
+//     if (requestQueue.length < max){
+//       handleRequest(urls[++i])
+//     }
+//   }
+
+//   handleRequest(url[i])
+// }
+
+// proxy
+
+let pos = {
+  x: 20,
+  y: 30
+}
+
+let handle = {
+  get: (obj, prop) => 40
+}
+
+var target = new Proxy(target, handle)
+
+console.log(target.x)
+console.log(target.x)
+console.log(target.y)
