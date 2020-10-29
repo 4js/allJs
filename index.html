@@ -1,0 +1,68 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-08-26 13:59:37
+ * @LastEditTime: 2020-08-27 14:32:56
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \allJs\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试</title>
+  <style>
+    .demo{
+      display: flex;
+    }
+    .box1{
+      width: 200px;
+      height: 200px;
+      /* box-shadow: 10px 10px 10px 10px red; */
+      background: linear-gradient(-50deg, red, yellow)
+      /* border: 1px solid gray;
+      animation: scaleBox 5s ease-in-out 2s infinite; */
+    }
+    .text-demo{
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      /* word-wrap: normal; */
+      /* line-clamp: 2; */
+      /* box-orient: vertical; */
+      /* display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; */
+    }
+    /* .box2{
+      flex: 0 0 auto;
+      border: 1px solid red;
+    }
+    .box3{
+      flex: 1 0 300px;
+      border: 1px solid gray;
+    } */
+    /* @keyframes scaleBox {
+      0% {
+        width: 200px;
+      }
+      50% {
+        width: 300px;
+      }
+      100% {
+        width: 200px;
+      }
+    } */
+  </style>
+</head>
+<body>
+  <div class="demo">
+    <div class="box1"></div>
+    <!-- <div class="box2"></div>
+    <div class="box3"></div> -->
+  </div>
+  <p class="text-demo">这是一行测试文本，超出了第三行内容则显示省略号，主要是内容太多撑不下去，提高用户体验的一种方法</p>
+</body>
+</html>
